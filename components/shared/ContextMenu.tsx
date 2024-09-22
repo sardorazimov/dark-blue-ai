@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 "use client"
 
 import { useState, useEffect } from 'react'
@@ -5,6 +6,7 @@ import { useState, useEffect } from 'react'
 import { ChevronDown, MessageSquare, Star, Archive, PlusCircle,  } from "lucide-react"
 
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover"
+import { Button } from '../ui/button'
 
 
 export default function ContextMenu() {
@@ -48,7 +50,7 @@ export default function ContextMenu() {
         <ChatItem icon={<PlusCircle size={18} className='text-purple-600' />} label="New list" count={2} />
       </nav>
     
-          {/* <Button onClick={() => setIsOpen(false)} className=''>Close</Button> */}
+           <Button onClick={() => setIsOpen(false)} className=''>Close</Button> 
         </div>
       </PopoverContent>
     </Popover>
