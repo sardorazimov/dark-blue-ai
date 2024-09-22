@@ -1,17 +1,15 @@
 "use client"
 
 import { useState, useEffect } from 'react'
-import { useTheme } from 'next-themes'
-import { ChevronDown, MessageSquare, Star, Archive, PlusCircle, Sun, Moon } from "lucide-react"
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
-import { Button } from "@/components/ui/button"
-import { Lock } from 'lucide-react'
+
+import { ChevronDown, MessageSquare, Star, Archive, PlusCircle,  } from "lucide-react"
+
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover"
-import { BiCloset } from 'react-icons/bi'
+
 
 export default function ContextMenu() {
   const [mounted, setMounted] = useState(false)
-  const { theme, setTheme } = useTheme()
+
   const [isOpen, setIsOpen] = useState(false)
   const [privateContent, setPrivateContent] = useState("This is private content")
 
