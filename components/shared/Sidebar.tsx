@@ -6,7 +6,7 @@ import React from 'react'
 
 import { RiBankCard2Fill } from 'react-icons/ri';
 import ContextMenu from './ContextMenu';
-import { ModeToggle } from '../providers/mode-toogle';
+
 import UserBar from './UserBar';
 
 const Sidebar = () => {
