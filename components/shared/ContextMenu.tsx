@@ -9,6 +9,7 @@ import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover
 import { Button } from '../ui/button'
 
 
+
 export default function ContextMenu() {
   const [mounted, setMounted] = useState(false)
 
@@ -58,7 +59,9 @@ export default function ContextMenu() {
   )
 }
 
-function ChatItem({ icon, label, count, active = false }) {
+function ChatItem({ icon, label, count, active = false }:{
+   icon: string, label: string, count?: number, active?: boolean 
+}) {
   return (
     <div className={`flex items-center space-x-2 p-2 rounded ${active ? 'bg-secondary' : 'hover:bg-secondary/50'}`}>
       <span className={`${active ? 'text-primary' : 'text-muted-foreground'}`}>{icon}</span>
