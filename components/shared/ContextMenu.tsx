@@ -34,27 +34,26 @@ export default function ContextMenu() {
 
   return (
     <div className="flex ">
-    <Popover open={isOpen} onOpenChange={handleOpenChange}>
-      <PopoverTrigger asChild>
-        <div  className=' flex' >
+    <div>
+      <div>
+        {/* <div  className=' flex' >
           <ChevronDown className="mr-2 mt-1 h-4 w-4" />
           {isOpen ? "Close Chat" : "Open Chat"}
-        </div>
-      </PopoverTrigger>
-      <PopoverContent className="w-52">
+        </div> */}
+      </div>
+      <div className="w-52">
         <div className="">
         <nav className="space-y-2 flex-grow">
-        <ChatItem icon={<MessageSquare size={18} className='text-red-600' />} label="Welcome" count={41} active />
-        <ChatItem icon={<MessageSquare size={18}  className='text-green-600'/>} label="Xora Production" count={10}  />
-        <ChatItem icon={<Star size={18} className='text-yellow-600' />} label="Favorites"  count={1} />
-        <ChatItem icon={<Archive size={18} className='text-fuchsia-700' />} label="Archived" count={128} />
-        <ChatItem icon={<PlusCircle size={18} className='text-purple-600' />} label="New list" count={2} />
+         <ChatItem icon={<MessageSquare size={18} className='text-red-600' />} label="Welcome" count={41} active />
+         <ChatItem icon={<MessageSquare size={18}  className='text-green-600'/>} label="Xora Production" count={10}  />
+         <ChatItem icon={<Star size={18} className='text-yellow-600' />} label="Favorites"  count={1} />
+         <ChatItem icon={<Archive size={18} className='text-fuchsia-700' />} label="Archived" count={128} />
+         <ChatItem icon={<PlusCircle size={18} className='text-purple-600' />} label="New list" count={2} /> 
       </nav>
-    
-           <Button onClick={() => setIsOpen(false)} className=''>Close</Button> 
+
         </div>
-      </PopoverContent>
-    </Popover>
+      </div>
+    </div>
   </div>
   )
 }

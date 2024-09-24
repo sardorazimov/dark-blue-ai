@@ -13,17 +13,9 @@ const Sidebar = () => {
     const currentPath = usePathname();
    
   return (
-    <div className='lg:py-[57px] w-full'>
-      <nav className='w-full h-full mx-auto '>
+    <div className='lg:py-[59px]  lg:w-52 lg:flex hidden'>
+      <nav className='w-full h-full mx-auto flex '>
             <div className="container flex flex-col justify-between  items-center">
-                {/* <div className="logo">
-                    <Link href={'/'}><h4 className='text-2xl tracking-tight font-bold'>active <span className=' text-green-500 uppercase'>Linktest</span></h4></Link>
-                </div> */}
-
-                {/* <div className='text-3xl text-slate-600 cursor-pointer lg:hidden' onClick={() => setToggle(prev => !prev)}>
-                    {toggle ? <BiMenuAltRight /> : <AiOutlineClose />}
-                </div> */}
-
                 <div className="hidden py-10 lg:flex  flex-col items-center w-full gap-10  border-b border-white/10">
                     <Link href={'/welcome'} className={currentPath === "/welcome" ? "text-green-500 font-semibold" : ""}>
                      <div className='flex gap-2'>
@@ -52,7 +44,7 @@ const Sidebar = () => {
                 </div>
                 <ContextMenu/>
                 {/* <UserBar /> */}
-                 <div className='py-40'>
+                 <div className=''>
                    <UserBar/>  
                 </div> 
             </div>
