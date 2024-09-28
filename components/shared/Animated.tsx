@@ -63,23 +63,7 @@ export function AnimatedBeamDemo() {
         curvature={20}
         reverse
       />
-      <AnimatedBeam
-        containerRef={containerRef}
-        fromRef={div1Ref}
-        toRef={div2Ref}
-        startYOffset={10}
-        endYOffset={10}
-        curvature={-20}
-      />
-      <AnimatedBeam
-        containerRef={containerRef}
-        fromRef={div1Ref}
-        toRef={div2Ref}
-        startYOffset={-10}
-        endYOffset={-10}
-        curvature={20}
-        reverse
-      />
+  
     </div>
   );
 }
